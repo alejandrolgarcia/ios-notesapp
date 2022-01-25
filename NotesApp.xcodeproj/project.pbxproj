@@ -12,7 +12,11 @@
 		9C7C8753279CFFB700E83E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C8752279CFFB700E83E8F /* Assets.xcassets */; };
 		9C7C8756279CFFB700E83E8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C8755279CFFB700E83E8F /* Preview Assets.xcassets */; };
 		9C7C8758279CFFB700E83E8F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C8757279CFFB700E83E8F /* Persistence.swift */; };
-		9C7C875B279CFFB700E83E8F /* NotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C8759279CFFB700E83E8F /* NotesApp.xcdatamodeld */; };
+		9C7C8764279D030F00E83E8F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C8763279D030F00E83E8F /* ViewModel.swift */; };
+		9C7C8767279D1CA500E83E8F /* NotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C8765279D1CA500E83E8F /* NotesApp.xcdatamodeld */; };
+		9C7C8769279D1D3B00E83E8F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C8768279D1D3B00E83E8F /* HomeView.swift */; };
+		9C7C876B279D1D6B00E83E8F /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C876A279D1D6B00E83E8F /* AddView.swift */; };
+		9C7C876E279E755E00E83E8F /* SubString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C876D279E755E00E83E8F /* SubString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +26,11 @@
 		9C7C8752279CFFB700E83E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7C8755279CFFB700E83E8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C7C8757279CFFB700E83E8F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		9C7C875A279CFFB700E83E8F /* NotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesApp.xcdatamodel; sourceTree = "<group>"; };
+		9C7C8763279D030F00E83E8F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9C7C8766279D1CA500E83E8F /* NotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesApp.xcdatamodel; sourceTree = "<group>"; };
+		9C7C8768279D1D3B00E83E8F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9C7C876A279D1D6B00E83E8F /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		9C7C876D279E755E00E83E8F /* SubString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,14 @@
 		9C7C874D279CFFB500E83E8F /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C7C876C279E74F300E83E8F /* Helpers */,
+				9C7C8765279D1CA500E83E8F /* NotesApp.xcdatamodeld */,
+				9C7C8762279D02E900E83E8F /* ViewModel */,
+				9C7C8761279D02DF00E83E8F /* View */,
 				9C7C874E279CFFB500E83E8F /* NotesAppApp.swift */,
 				9C7C8750279CFFB500E83E8F /* ContentView.swift */,
 				9C7C8752279CFFB700E83E8F /* Assets.xcassets */,
 				9C7C8757279CFFB700E83E8F /* Persistence.swift */,
-				9C7C8759279CFFB700E83E8F /* NotesApp.xcdatamodeld */,
 				9C7C8754279CFFB700E83E8F /* Preview Content */,
 			);
 			path = NotesApp;
@@ -71,6 +82,31 @@
 				9C7C8755279CFFB700E83E8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C7C8761279D02DF00E83E8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C7C8768279D1D3B00E83E8F /* HomeView.swift */,
+				9C7C876A279D1D6B00E83E8F /* AddView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C7C8762279D02E900E83E8F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C7C8763279D030F00E83E8F /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C7C876C279E74F300E83E8F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C7C876D279E755E00E83E8F /* SubString.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C7C876B279D1D6B00E83E8F /* AddView.swift in Sources */,
+				9C7C8764279D030F00E83E8F /* ViewModel.swift in Sources */,
 				9C7C8758279CFFB700E83E8F /* Persistence.swift in Sources */,
+				9C7C876E279E755E00E83E8F /* SubString.swift in Sources */,
 				9C7C8751279CFFB500E83E8F /* ContentView.swift in Sources */,
+				9C7C8767279D1CA500E83E8F /* NotesApp.xcdatamodeld in Sources */,
+				9C7C8769279D1D3B00E83E8F /* HomeView.swift in Sources */,
 				9C7C874F279CFFB500E83E8F /* NotesAppApp.swift in Sources */,
-				9C7C875B279CFFB700E83E8F /* NotesApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,14 +391,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9C7C8759279CFFB700E83E8F /* NotesApp.xcdatamodeld */ = {
+		9C7C8765279D1CA500E83E8F /* NotesApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9C7C875A279CFFB700E83E8F /* NotesApp.xcdatamodel */,
+				9C7C8766279D1CA500E83E8F /* NotesApp.xcdatamodel */,
 			);
-			currentVersion = 9C7C875A279CFFB700E83E8F /* NotesApp.xcdatamodel */;
+			currentVersion = 9C7C8766279D1CA500E83E8F /* NotesApp.xcdatamodel */;
 			path = NotesApp.xcdatamodeld;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
